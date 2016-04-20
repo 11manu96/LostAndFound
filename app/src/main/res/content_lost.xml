@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLayout"
+    android:stretchColumns="0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--<TextView android:text="@string/roll_no"
+        android:layout_x="30dp"
+        android:layout_y="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="8dp"
+        android:id = "@+id/linear">
+
+        <TextView android:text="@string/title"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/textView" />
+
+
+    <!--<EditText android:id="@+id/editRollno"-->
+        <!--android:inputType="number"-->
+        <!--android:layout_x="0dp"-->
+        <!--android:layout_y="52dp"-->
+        <!--android:hint = "Item ID"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+   <!-- <TextView android:text="@string/name"
+        android:layout_x="30dp"
+        android:layout_y="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+    <EditText android:id="@+id/editName"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Name"/>
+        <!--android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/btnModify"
+        android:layout_toEndOf="@+id/btnModify"--> />
+   <!-- <TextView android:text="@string/marks"
+        android:layout_x="30dp"
+        android:layout_y="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+    <EditText android:id="@+id/editType"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:hint="Type"
+        android:layout_height="wrap_content" />
+        <!--android:layout_x="0dp"
+        android:layout_y="147dp"-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll number"
+        android:id = "@+id/editRollno"
+        android:inputType="number"
+        />
+
+       <!-- android:layout_alignBaseline="@+id/btnViewAll"
+        android:layout_alignBottom="@+id/btnViewAll"
+        android:layout_alignRight="@+id/btnShowInfo"
+        android:layout_alignEnd="@+id/btnShowInfo"--> />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/editContact"
+        android:hint = "Contact number"
+        android:inputType="phone"/>
+        <!--android:layout_x="-7dp"
+        android:layout_y="200dp"-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place last seen"
+            android:id="@+id/editPlace"
+            android:inputType="text"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint = "Item description"
+            android:id = "@+id/editDesc"
+            />
+
+    </LinearLayout>
+
+    <Button	  android:id="@+id/btnAdd"
+        android:text="@string/add"
+        android:layout_x="30dp"
+        android:layout_y="362dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"/>
+       <!-- android:layout_alignTop="@+id/btnDelete"
+        android:layout_alignLeft="@+id/btnShowInfo"
+        android:layout_alignStart="@+id/btnShowInfo"--> />
+    <Button	  android:id="@+id/btnDelete"
+        android:text="@string/delete"
+        android:layout_x="265dp"
+        android:layout_y="362dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"/>
+       <!-- android:layout_alignTop="@+id/btnModify"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"--> />n
+    <Button   android:id="@+id/btnModify"
+        android:text="@string/modify"
+        android:layout_marginTop="84dp"
+        android:layout_x="30dp"
+        android:layout_y="401dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"/>
+        <!--android:layout_below="@+id/btnViewAll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"-->
+
+    <Button   android:id="@+id/btnView"
+        android:text="@string/view"
+        android:layout_x="265dp"
+        android:layout_y="408dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"/>
+        <!--android:layout_alignTop="@+id/btnShowInfo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"--> />
+    <Button   android:id="@+id/btnViewAll"
+        android:text="@string/view_all"
+        android:layout_x="30dp"
+        android:layout_y="443dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"/>
+        <!--android:layout_alignTop="@+id/btnShowInfo"
+        android:layout_alignRight="@+id/editRollno"
+        android:layout_alignEnd="@+id/editRollno"--> />
+    <Button   android:id="@+id/btnShowInfo"
+        android:text="@string/show_info"
+        android:layout_x="265dp"
+        android:layout_y="447dp"
+        android:layout_marginTop="84dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"/>
+
+    <!--android:layout_below="@+id/editRollno"
+        android:layout_centerHorizontal="true"-->
+
+</AbsoluteLayout>
