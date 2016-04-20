@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/myLayout"
-    android:stretchColumns="0"
+    android:columnCount="3"
+    android:rowCount="5"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
@@ -12,17 +13,21 @@
         android:layout_height="wrap_content"/>-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:elevation="8dp"
-        android:id = "@+id/linear">
+        android:id = "@+id/linear"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        >
 
-        <TextView android:text="@string/title"
+        <TextView android:text="Lost items"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:id="@+id/textView" />
+            android:id="@+id/textView"
+            android:layout_gravity="center"/>
 
 
     <!--<EditText android:id="@+id/editRollno"-->
@@ -96,60 +101,70 @@
 
     <Button	  android:id="@+id/btnAdd"
         android:text="@string/add"
-        android:layout_x="30dp"
-        android:layout_y="362dp"
-        android:layout_width="100dp"
-        android:layout_height="40dp"/>
+        android:layout_column="0"
+        android:layout_row = "2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />
        <!-- android:layout_alignTop="@+id/btnDelete"
         android:layout_alignLeft="@+id/btnShowInfo"
         android:layout_alignStart="@+id/btnShowInfo"--> />
     <Button	  android:id="@+id/btnDelete"
         android:text="@string/delete"
-        android:layout_x="265dp"
-        android:layout_y="362dp"
-        android:layout_width="100dp"
-        android:layout_height="40dp"/>
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
        <!-- android:layout_alignTop="@+id/btnModify"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"--> />n
     <Button   android:id="@+id/btnModify"
         android:text="@string/modify"
-        android:layout_marginTop="84dp"
-        android:layout_x="30dp"
-        android:layout_y="401dp"
-        android:layout_width="100dp"
-        android:layout_height="40dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_column="0"
+        android:layout_row="2"
+        />
         <!--android:layout_below="@+id/btnViewAll"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"-->
 
     <Button   android:id="@+id/btnView"
         android:text="@string/view"
-        android:layout_x="265dp"
-        android:layout_y="408dp"
-        android:layout_width="100dp"
-        android:layout_height="40dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:layout_gravity="left"
+        />
         <!--android:layout_alignTop="@+id/btnShowInfo"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"--> />
     <Button   android:id="@+id/btnViewAll"
         android:text="@string/view_all"
-        android:layout_x="30dp"
-        android:layout_y="443dp"
-        android:layout_width="100dp"
-        android:layout_height="40dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_column="0"
+        android:layout_row="4"
+        />
         <!--android:layout_alignTop="@+id/btnShowInfo"
         android:layout_alignRight="@+id/editRollno"
         android:layout_alignEnd="@+id/editRollno"--> />
     <Button   android:id="@+id/btnShowInfo"
         android:text="@string/show_info"
-        android:layout_x="265dp"
-        android:layout_y="447dp"
-        android:layout_marginTop="84dp"
-        android:layout_width="100dp"
-        android:layout_height="40dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:layout_row="3"
+
+        />
 
     <!--android:layout_below="@+id/editRollno"
         android:layout_centerHorizontal="true"-->
 
-</AbsoluteLayout>
+</GridLayout>
